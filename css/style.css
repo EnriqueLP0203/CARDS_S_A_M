@@ -1,0 +1,126 @@
+:root {
+    --primary: #461d02;
+    --secundary: #812A14;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2023/12/13/06/47/footprints-8446394_1280.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.titulo {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--primary);
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+
+
+.nombre {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--secundary);
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.nombre
+
+.back{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    pad: 80px 32px;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 24px;
+}
+
+.articles article {
+    max-width: 320px;
+    cursor: pointer;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #EBD468;
+    padding: 16px;
+}
+
+.articles article a{
+    font-family: "Quicksand", sans-serif;
+    display: inline-flex;
+    color: var(--secundary);
+    text-decoration: none;
+}
+
+.articles article h2 {
+    margin: 0 0 18px 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.articles article p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+
+.articles article img {
+    max-width: 100%;
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.articles figure {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.articles figure img{
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.articles article:hover figure img {
+    transform: scale(1.5);
+}
+
+.article-preview {
+    padding: 16px;
+}
+
+.articles article:hover h2 {
+    color: var(--secundary);
+
+}
